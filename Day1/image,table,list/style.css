@@ -1,0 +1,9 @@
+
+table,caption, th, td{
+    border: 2px solid blue;
+    border-collapse: collapse;
+}
+
+#study{
+    text-align: center;
+}

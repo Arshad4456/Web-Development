@@ -1,0 +1,12 @@
+label{
+    margin-bottom: 2px;
+    display: block;
+}
+
+div{
+    margin: 5px 0px 15px 10px;
+}
+
+div#button input{
+    background-color: aquamarine;
+}
