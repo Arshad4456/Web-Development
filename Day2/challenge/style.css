@@ -1,0 +1,14 @@
+video{
+    width: 250px;
+    height: auto;
+    margin:0px 10px 5px 5px;
+
+}
+div{
+    margin: 8px auto;
+}
+
+audio{
+    display: block;
+    margin-bottom: 8px;
+}

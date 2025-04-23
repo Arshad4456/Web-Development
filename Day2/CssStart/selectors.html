@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Selectors -html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            background-color: rgb(108, 179, 196);   
+        }
+        .divp{
+            background-color: brown;
+        }
+        div > span{
+            background-color: blueviolet;
+        }
+        #span2{
+            background-color: red;
+        }
+
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div>
+            <span>Elements Selectors</span>
+        <span id="span2">this is span</span></div>
+            <div class="divp">
+                <p>This is the paragraph inside the div tag.</p></div>
+                <div>
+                    <h1>Elements Selectors</h1></div>
+
+                    <a href="http://www.google.com">Go to Google</a>
+                    <a href="http://www.facebook.com">Go to Facebook</a>
+                    <a href="http://www.amazon.com">Go to Amazon</a>
+
+                    <div>
+                        <p>i am first para</p>
+                        <p>i am second para</p>
+                    </div>
+    </main>
+    <footer>
+        <p>www.focusandhardword.com|All Rights reserved</p>
+    </footer>
+
+
+</body>
+</html>
