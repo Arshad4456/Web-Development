@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position -css</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+           display: grid;
+           justify-items: center;
+            margin: 10px 30px;
+            border: 2px solid black;
+            /* position: relative; */
+        }
+        .box {
+
+            height: 800px;
+            width: 800px;
+            /* background-color: red; */
+            margin: 10px;
+
+        }
+
+        .box1 {
+            
+            background-color: lightgreen;
+            border: 1px solid black;
+            height:200px;
+            position: sticky;
+            top: 0px;
+            /* position: relative; */
+            /* z-index: 1; */
+            top: 0px;
+        }
+
+        .box2 {
+            background-color: rgba(235, 40, 10, 0.466);
+            /* height: 200px;
+            position: sticky;
+            top: 10px;
+            left: 40px; */
+           
+        }
+
+        .box3 {
+            background-color: lightblue;
+        }
+
+        .box4 {
+            background-color: rgb(45, 48, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

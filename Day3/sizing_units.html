@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units -css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            margin: auto;
+            width: 100vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sizing Units</h1>
+    <p>In CSS, there are several units of measurement that can be used to define sizes. Here are some of the most common ones:</p>
+    <ul>
+        <li><strong>px (pixels):</strong> A fixed unit that represents a single pixel on the screen.</li>
+        <li><strong>em:</strong> A relative unit that is based on the font size of the element. 1em is equal to the current font size.</li>
+        <li><strong>rem:</strong> Similar to em, but it is based on the root font size (usually the font size of the html element).</li>
+        <li><strong>% (percentage):</strong> A relative unit that is based on the parent element's size. For example, 50% would be half of the parent element's size.</li>
+        <li><strong>vh (viewport height):</strong> A relative unit that is based on the height of the viewport. 1vh is equal to 1% of the viewport height.</li>
+        <li><strong>vw (viewport width):</strong> A relative unit that is based on the width of the viewport. 1vw is equal to 1% of the viewport width.</li>
+    </ul>
+    <p>These units can be used for various CSS properties such as width, height, padding, margin, and font-size.</p>
+    <div class="box">
+        <p>This is a box with a width of 50% and a height of 50vh.</p>
+    </div>
+</body>
+</html>

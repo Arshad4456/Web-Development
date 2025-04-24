@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        .box{
+            /* display: inline; */
+            display: inline-block;
+            /* display: flex; */
+            /* display: inline-flex; */
+            /* display: block; */
+            /* display: grid; */
+            /* display: inline-grid; */
+            width:100px;
+            margin: 10px;
+            padding: 20px;
+            
+
+        }
+        .box1{
+            border: 2px solid red;
+        }
+        .box2{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="box box1">
+            This is box typeone
+        </div>
+        <div class="box box2">
+            This is box type two
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

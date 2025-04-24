@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unit2 -css</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 12px;
+        }
+        .container{
+            background-color: lightblue;
+            width: 50vw;
+            height: 50vh;
+            margin: 25vh auto;
+            font-size: 16px;
+        }
+        .container p{
+            font-size: 2em; 
+            /* 1.5 times the root font size (12px) */
+        }
+        .box{
+            background-color: #ea5b5b;
+            width:100vmin; /* 100vmin is the smaller of 100vw or 100vh */   
+            /* height: 50vmin; 100vmin is the smaller of 100vw or 100vh */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>this is navbarr</nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>This is the container.</p>
+        </div>
+        <div class="box">
+            <p>THis is the box.
+            </p>
+        </div>
+    </main>
+    <footer>
+        </footer>
+</body>
+</html>

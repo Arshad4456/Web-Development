@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade -css</title>
+    <style>
+        /* The specificity of this selector is 1. */
+        h1 {
+            color: blue;
+        }
+        /* #green{
+            color: green;
+        } */
+        /* The specificity of this selector is 10 */
+        .class1 {
+            color: red;
+        }
+        /* The specificity of this selector is 10 + 1 */
+        h1.class2 {
+            color: yellow ; 
+            /* !important overrides all other styles */
+        }
+        /* The specificity of this selector is 10 */
+        .class3 {
+            color: purple;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 id="green" class="class1 class2 class3">Specificity</h1>
+    <p>
+        The color of this heading is determined by the CSS rules applied to it. The order of specificity is as follows:
+        <ul>
+            <li>Inline styles (not used here)</li>
+            <li>ID selectors (#green)</li>
+            <li>Class selectors (.class1, .class2, .class3)</li>
+            <li>Element selectors (h1)</li>
+        </ul>
+        In this case, the ID selector has higher specificity than the class selectors, so the text color is green.
+    </p>
+
+    <h1></h1>
+
+    <p>
+        If you want to override the ID selector, you can use the !important rule in the class2 style. This will make the text color yellow, regardless of the specificity order.
+
+        <h1 class="class4">Cascade Algorithm</h1>
+        <p>The cascade algorithm determines which CSS rules apply to an element when multiple rules match. The order of precedence is as follows:</p>
+        <ol>
+            <li>Inline styles</li>
+            <li>IDs</li>
+            <li>Classes</li>
+            <li>Elements</li>
+            <li>Universal selector (*)</li>
+        </ol>
+        <p>cascade has four distinct stages
+        <ol>
+            <li>Position and order of appearance:</li>
+            <li>Specificity</li>
+            <li>Origin</li>
+            <li>Important rules</li>
+        </ol>
+        
+        </p>
+
+
+        <h1>specificity calculation</h1>
+        <p>The calculation give different number for different selectors
+        <ul>
+            <li>Inline styles: 1000</li>
+            <li>ID selectors: 100</li>
+            <li>Class selectors: 10</li>
+            <li>Element selectors: 1</li>
+            <li>Universal selector (*): 0</li>
+            <li>Attribute selectors: 10</li>
+            <li>Pseudo-classes: 10</li>
+            <li>Pseudo-elements: 1</li>
+            <li>Important rules: 10000</li>
+            <li>Media queries: 0</li>  
+            <li>Keyframes: 0</li>
+            <li>Custom properties: 0</li>
+            <li>CSS variables: 0</li>
+            <li>CSS functions: 0</li>
+            
+        </ul>
+        <p>For example, if you have the following selectors:</p>
+        <ul>
+            <li>h1: 1</li>
+            <li>.class1: 10</li>
+            <li>#green: 100</li>
+            <li>h1.class2: 11</li>
+            <li>h1.class3: 11</li>
+            <li>h1.class4: 11</li>
+        </ul>
+        <p>The specificity of the combined selectors is calculated by adding the values together. For example, if you have a selector like h1.class1#green, the specificity would be 1 + 10 + 100 = 111.</p>
+        <p>In this case, the ID selector (#green) has the highest specificity, so it will take precedence over the class selectors and element selectors.</p>
+        <p>In conclusion, understanding specificity and the cascade algorithm is crucial for writing effective CSS. By knowing how to calculate specificity and the order of precedence, you can ensure that your styles are applied correctly and consistently across your web pages.</p>
+        <h1>Quick quiz</h1>
+        <p>what will be the specificity calculation of the following selectors</p>
+        <p>a.harryclass.rohan-class[href]:hover{color:red} . The specificity of this selector is a=1,.harryclass=10,.rohan-class=10,.rohan-class[href],:hover=10</p>
+        <p>so the  total specificity = 41</p>
+
+
+
+
+       
+</body>
+</html>
