@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Challenge -css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        :root{
+            --bgcolor: #2fcaf0;
+            --color: #eab411;
+            --seccolor: #490ca4;
+            --dffont-family: 'Arial', sans-serif;
+            --dffont-size: 16px;
+            --dfpadding: 20px;
+            --dfpadnav: 5px 12px;
+            --dfmargin:5px 12px;
+            --dflist-style:none;
+            --dfborder-radius: 8px;
+            --dffont-weight: bold;
+            --bg1: #0c5728;
+            --bg2: #8e26ea;
+            --bg3: #d0d0d0;
+            --bg4:rgb(216, 94, 94);
+        }
+
+        body{ background-color: gray;}
+    
+        .nav{
+            background-color: var(--bgcolor);
+            padding: var(--dfpadding);
+            list-style:var(--dflist-style);
+        }
+        .nav ul {
+            display:flex;
+            /* margin:var(--dfmargin); */
+            /* padding:var(--dfpadding); */
+
+            list-style: var(--dflist-style);
+        }
+        .nav ul li {
+            font-family: var(--dffont-family);
+            font-weight:var(--dffont-weight);
+            border-radius: var(--dfborder-radius);
+            margin:var(--dfmargin);
+            padding:var(--dfpadnav);
+        }
+        .nav ul li:nth-child(1) {
+            background-color: var(--bg1);
+        }
+        .nav ul li:nth-child(2) {
+            background-color: var(--bg2);
+        }
+        .nav ul li:nth-child(3) {
+            background-color: var(--bg3);
+        }
+
+        .container{
+            background-color: var(--bg4);
+            
+        }
+        .container h1 {
+            font-family: var(--dffont-family);
+            padding: var(--dfpadding);
+        }
+
+        @media screen and (max-width: 455px) {
+            .nav ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* background-color: white; */
+
+            }
+            .nav ul li{
+                margin: 5px;
+                padding: 10px;
+                width: 30%;
+                text-align: center;
+            }
+            .container{
+                overflow :hidden;
+                align-items: center;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Variable Challenge</h1>
+        <p>Welcome to the Variable Challenge! This is a simple HTML page with CSS styling.</p>
+        <p>Use the variables defined in the CSS to change the colors and fonts of this page.</p>
+    </div>
+</body>
+</html>

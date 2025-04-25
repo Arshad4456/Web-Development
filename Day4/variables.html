@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables -css</title>
+    <style>
+        :root {
+            --color: red;
+            --seccolor: blue;
+            --bgcolor: green;
+            --bgcolor2: yellow;
+            --bgcolor3: pink;
+            --font: 'Arial', sans-serif;
+            --defpad:30px;
+            --defmargin:0px 10px;
+            --defopacity: 0.5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .scroll {
+            background-color: #f1f1f1;
+            padding: var(--defpad);
+            text-align: center;
+        }
+
+        .navbar {
+            opacity: var(--defopacity);
+            background-color: var(--color);
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            /* left: 0; */
+            /* z-index: 1; */
+            width: 100%;
+            /* top:0;
+            left: 0;
+            margin-top: 10px; */
+        }
+
+        .navbar ul {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            border: 2px solid var(--seccolor);
+            /* position:sticky; */
+            /* top: 0; */
+            /* left: 0; */
+            /* z-index: 1; */
+            list-style: none;
+            padding: 10px
+        }
+
+        .navbar ul li {
+             border: 2px solid var(--seccolor);
+            /* position: sticky;
+            top: 0;
+            left: 0; */
+            margin: var(--defmargin);
+            padding: 10px;
+        }
+
+        .navbar ul li:nth-child(1) {
+            font-family: var(--font);
+            background-color: var(--bgcolor);
+        }
+
+        .navbar ul li:nth-child(2) {
+            background-color: var(--bgcolor2);
+        }
+
+        .navbar ul li:nth-child(3) {
+            background-color: var(--bgcolor3);
+        }
+
+        .container {
+            /* position: relative; */
+            /* background-color: var(--seccolor); */
+            /* padding: 20px; */
+            /* margin: 20px; */
+            border-radius: 10px;
+            /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+        }
+
+
+        .container p,
+        h1 {
+            /* position: relative; */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+
+        <div class="scroll">
+            <h2>Scroll Down</h2>
+            <p>Scroll down to see the sticky effect.</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    <!-- <aside>
+        <div>
+            <ul>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+            </ul>
+        </div>
+    </aside> -->
+        <dav class="container">
+            <h1>hi</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus reprehenderit iste cum, et
+                neque architecto minus suscipit possimus delectus quo voluptatem saepe, unde, error vel placeat dolores!
+                Maiores corrupti laboriosam accusamus voluptates placeat dolorum? Deleniti, similique. Saepe possimus
+                nulla
+                suscipit recusandae. Facere, dolorum aut.
+            </p>
+        </dav>
+   
+   
+</body>
+
+</html>

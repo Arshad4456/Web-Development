@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector -css</title>
+    <style>
+        .box:nth-child(1) {
+            background-color: red;
+        }
+        .box:nth-child(2) {
+            background-color: lightblue;
+        }
+        .box:nth-child(3) {
+            background-color: lightgreen;
+        }
+        .boxes::before{
+            content:"This is before the box content";
+        }
+        .boxes::after{
+            content:"This is after the boxes content";
+        }
+        ::selection{
+            background-color: violet;
+            color: wheat;
+        }
+        .box:first-child::first-line{
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box:nth-child(2)::first-letter{
+            font-size: 2em;
+            color: rgb(57, 113, 223);
+        }
+        .box:nth-last-child(1){
+            background-color: magenta;
+        }
+
+        .boxes *{
+            color: white;
+        }
+        [data-color="primary"]{
+            padding-bottom: 20px;
+        }
+
+        .box:nth-child(even){
+            background-color: lightseagreen;
+        }
+        input::placeholder{
+            color:blue;
+            /* font-size: 1.5em; */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">This is the first box</div>
+        <div data-color="primary" class="box">This is the second box</div>
+        <div class="box">This is the third box</div>
+        <input type="text" placeholder="This is an input field" >
+    </div>
+</body>
+</html>

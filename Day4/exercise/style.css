@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #c8e1ef;
+    --seccolor: #0a7bbc;
+    --thirdcolor: #8c4d4d;
+    --bgcolor: #6752dc;
+}
+body{
+    background-color: var(--main-color);
+}
+header{
+    position:sticky;
+    top:0;
+}
+nav{
+    /* position: sticky; */
+    background-color: var(--seccolor);
+    color: white;
+    padding: 10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 5px 30px;
+    padding: 0 10px;
+    list-style: none;
+    /* display: inline-block; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.boxes{
+
+    background-color: rgb(249, 233, 233);
+    background-image:url("../exercise/camilo-contreras-_cZY3CoFbOY-unsplash.jpg");
+    border: 2px solid black;
+    padding: 30px 60px;
+    margin: 5px 10px;
+    width: auto;
+    height:400px;
+    display: flex;
+}
+.boxes .box{ 
+
+    margin: 0 20px;
+    width:100%;
+}
+.boxes .box1{
+    background-image: url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpcnN0JTIwY29sb3J8ZW58MHx8fHwxNjg5NTQ1MjA2&ixlib=rb-4.0.3&q=80&w=400); 
+    background-color: yellowgreen;
+}
+.boxes .box2{
+    background-image:url("../exercise/francesco-liotti-3WuPC7cv_rI-unsplash.jpg");
+    background-color: yellow;
+}
+
+.welcome{
+    background-image: url(../exercise/unsplash2.jpg);
+    background-color:bisque;
+    border-radius: 40px;
+    height: 200px;
+    margin:10px 50px 50px 50px;
+    align-content: center;
+}
+.welcome h1{
+    /* color: ; */
+    text-align: center;
+    text-shadow: 2px 2px 4px #35bfe6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 20px 0; */
+}
+
+footer{
+    background-color: violet;
+    height: 50px;
+}
+.footer {
+    /* align-content: center; */
+    /* display: flex; */
+    
+    /* margin: 0px auto; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer p{
+    /* margin:  0px; */
+    /* text-al
+    ign: center; */
+    /* align-content: center; */
+    /* align-self: center; */
+}
+
+.footer .logo{
+    /* border-radius: 50%; */
+    margin: 0px 10px 20px 0px;
+    position:fixed;
+    bottom: 0;
+    right: 0
+}
+.footer .logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
