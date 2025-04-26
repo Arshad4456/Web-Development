@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Exercise -css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 70vw;
+            margin: 0px auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* background-color: #f0f0f0; */
+            height: 60px;
+            padding: 0 15px;
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+            /* background-color: aqua; */
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 10px;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+            /* font-size: 0px; */
+            /* font-weight: bold; */
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:black
+        }
+
+        .icon {
+            /* margin: 0 20px; */
+
+        }
+        
+        .sigma{
+            display: flex;
+            
+        }
+        .order1{
+            order: 1;
+        }
+        
+        .box1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            /* border: 2px solid black; */
+            justify-content: space-around;
+            align-items: center;
+            flex:50px;
+        }
+
+        .box1 .window{
+            font-size:40px;
+        }
+       
+        .box1 span{
+            /* font-weight: 100; */
+            font-weight: bold;
+        }
+        .box1 p{
+            text-align: center;
+            font-size: 1.3em;
+        }
+        .box1 button{
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(43, 191, 191);
+            cursor: pointer;
+            width:280px;
+            height: 40px;
+        }
+        .box1 button a{
+            font-weight: 30px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            header {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            }
+
+            nav ul {
+            flex-direction: column;
+            margin-right: 0;
+            }
+
+            nav ul li {
+            margin: 10px 0;
+            }
+
+            .sigma {
+            flex-direction: column;
+            align-items: flex-start;
+            }
+
+            .sigma-logo {
+            margin-bottom: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav order1">
+            <ul>
+                <li><a href="/">Product</a>
+                </li>
+                <li><a href="/">Pricing</a></li>
+                <li><a href="/">Resources</a></li>
+                <li><a href="/">About Us</a></li>
+                <div class="icon"><a href="/">
+                    <img src="../flex_exercise/icons8-language-48.png" width="30px" height="30px"></a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="sigma">
+            <div class="sigma-logo">
+                <img src="../flex_exercise/8_1sasa11.jpg" alt="" width="50px" height="50px">
+            </div>
+            <div>
+            <h2>Sigma</h2>
+            <h6>web development</h6>
+        </div>
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1">
+                <p class="window">Download <span>UltraEdit</span> for Windows</p>
+                <p>Download and try UltraEdit before you buy it!This download includes the full Windows version of the text editor.</p>
+                <button type="submit"><a href="http://UltraEdit.com">DOWNLOAD MAC OR LINUX VERSION</button></a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

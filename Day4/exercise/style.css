@@ -84,15 +84,15 @@ nav ul li a{
 footer{
     background-color: violet;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer {
     /* align-content: center; */
-    /* display: flex; */
+    display: flex;
     
     /* margin: 0px auto; */
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 .footer p{
     /* margin:  0px; */
