@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 50vw;
+            height: 40vh;
+            background-color: antiquewhite;
+        }
+        .box{
+            width: 60px;
+            height: 40px;
+            background-color: blue;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: arshad;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-delay: 2s;
+            animation-iteration-count: infinite; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* animation-fill-mode: forwards; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: arshad 3s cubic-bezier(0.075, 0.82, 0.165, 1) 2s 2  backwards,
+            arshad2 3s ease-in-out 2s 2 ;
+        }
+
+        @keyframes arshad {
+            from{
+
+            } 
+            to{
+                transform:translateX(500px);
+                background-color: brown;
+            }
+            
+        }
+        @keyframes arshad2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(320def);
+            }
+            100%{
+                transform: rotate(320deg);
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

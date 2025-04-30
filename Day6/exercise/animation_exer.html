@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90vw;
+            height: 80vh;
+            background-color: blue;
+            position: relative;
+        
+        }
+        .box{
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            border-radius: 70px;
+            animation:animY 0.5s ease-out infinite  alternate,
+            animX 5s linear infinite ;
+            /* bounce 5s ease-in-out infinite forwards; */
+            ;
+
+        }
+
+        @keyframes animY {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom:50%;
+            }
+            
+        }
+        @keyframes animX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+            
+        }
+        
+    
+    /* @keyframes bounce {
+        0%{
+            left: 0x;
+            bottom:0px;
+        }
+
+
+        20%{
+            left:60px;
+            bottom:300px;
+        }
+        40%{
+            left:120px;
+            bottom:0px;
+        }
+        60%{
+            left: 180px;
+            bottom:300px;
+        }
+        80%{
+            left:240px;
+            bottom:0px;
+        }
+        100%{
+            left:300px;
+            bottom:300px;
+        }
+        
+    } */
+        
+    </style>
+</head>
+<body>
+    <head>
+        <nav></nav>
+    </head>
+    <main>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

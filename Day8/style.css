@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* --bg-opacity:0.1; */
+}
+
+body{
+    background-color: black;
+}
+header{
+    position: relative;
+    z-index: 0;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 100vh;
+
+    
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assits/header_bg.jpg);
+    background-size: cover;
+    background-position:center center;
+    /* display: block; */
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+
+.navbar{
+
+    position: relative;
+    z-index: 1;
+    top: 0;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 75vw;
+    /* background-color: red; */
+}
+nav .logo img{
+    width: 150px;
+    /* height: auto; */
+    /* color: white; */
+    /* font-weight: 900; */
+}
+
+nav .navbuts button{
+    border:1px solid rgb(229, 9, 20);
+    border-radius: 4px;
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    cursor: pointer;
+}
+
+/* nav .navbuts .but1{
+    background-color: rgba(14, 1, 2, 0.929);
+    } */
+    nav .navbuts .but2{
+    background-color: rgb(229, 9, 20);
+}
+
+/* Section */
+
+.section{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 400px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top:  70px; */
+    /* overflow: hidden; */
+
+}
+section .hdText{
+    /* background-color: red; */
+    width: 100%;
+    margin:auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* margin-bottom: 35px; */
+}
+.hdText span:nth-child(1){
+    width: 600px;
+    font-weight: 900;
+    font-size: 56px;
+    font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    /* padding:0px 0px 0px 0px; */
+}
+.hdText span:nth-child(2){
+    font-weight: 500;
+    font-size: 20px;
+    font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hdp{
+    display: relative;
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+    font-family:  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+}
+.email{
+    /* background-color:blueviolet; */
+    margin-top: 10px;
+    width: 100%;
+    /* margin: auto; */
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.email .input input{
+    margin-right: 8px;
+    padding: 18px 10px;
+    /* display: relative; */
+    font-size: 100%;
+    width: 380px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+}
+
+.email .button button{
+    /* display: relative; */
+    padding: 10px 30px;
+    background-color: red;
+    border: 1px solid rgb(230, 52, 52);
+    border-radius: 5px;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.secsep{
+    width: 100%;
+    background-color: gray;
+    height: 3px;
+    /* display: block; */
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec1{
+    width:80vw;
+    height:400px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec1 .sec1text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding:50px 0px; */
+    /* align-items: center; */
+}
+.sec1 .tvimg img{
+    height: 350px;
+    position: relative;
+    z-index: 10;
+}
+
+.tvimg{
+    position: relative;
+}
+
+
+.tvimg video{
+    height: 195px;
+    width:555px;
+    position: absolute;
+    top: 70px;
+    right: -42px;
+}
+
+.sec2{
+    width: 80vw;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.sec2 .faq{
+    /* background-color: rgb(150, 38, 38); */
+    width:75vw;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    /* font-size: 24px; */
+}
+.sec2 .sec21{
+    margin:5px 0px;
+    background-color:  rgb(45, 45, 45);
+    color: white;
+    width:75vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto; */
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.sec2 .sec21 p,img{
+    margin: auto 10px;
+    
+}
+
+
+.foot{
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    width: 100%;
+    display: flex;
+    /* margin: auto; */
+    /* flex-direction: column; */
+    /* align-items:center; */
+    justify-content: center;
+}
+.footer{
+    padding:40px 0px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.footer .contact{
+    margin-bottom: 20px;
+}
+.footer a{
+    color: rgb(184, 178, 178);
+    
+}
+.footsec{
+    /* background-color: antiquewhite; */
+    /* width: 80vw; */
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: space-between;
+row-gap: 10px;
+}
+
+ 
+@media screen and (max-width: 900px){
+    
+    header::before{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        /* width: ; */
+        /* height: fit-content; */
+        /* background-size:600px; */
+        /* background-position: center center; */
+    }
+    .hdText span:nth-child(1){
+        width: 100%;
+        font-weight: 900;
+        font-size: 28px;
+    }
+    /* .hdText span:nth-child(2){
+        font-weight: 500;
+        font-size: 28px;
+    } */
+    .email{
+
+        /* overflow: hidden; */
+        margin: 15px 0px;
+
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* padding-bottom: 10px; */
+        flex-direction: column;
+    }
+    .email .input input{
+        margin-bottom: 8px;
+        width: 200px;
+    }
+    .email .button button{
+        font-size: 12px;
+    }
+    .sec1{
+        display: flex;
+        flex-direction: column;
+      /* position: relative; */
+        /* justify-content: space-around; */
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .sec1 .sec1text{
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .tvimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .tvimg img{
+        width: 333px;
+        height: 300px;
+        /* height:50; */
+    }
+    .tvimg video{
+        /* position; */
+        /* align-items: center; */
+        width: 233px;
+        /* height: 170px; */
+        top: 20%;
+        left: 12%;
+    }
+    .footsec{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:370px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
