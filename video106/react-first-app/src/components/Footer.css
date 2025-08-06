@@ -1,0 +1,10 @@
+.mainDiv{
+    /* margin-top: 10px; */
+    background-color: rgb(66, 65, 65);
+    color: rgb(152, 148, 148);
+    /* justify-content: center; */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Employees</title>
+</head>
+<body>
+  <h1>Generate Dummy Employees</h1>
+  <button onclick="generateData()">Generate Data</button>
+  <p id="response"></p>
+
+  <script>
+    async function generateData() {
+      const res = await fetch('/generate');
+      const text = await res.text();
+      document.getElementById("response").innerText = text;
+    }
+  </script>
+</body>
+</html>
