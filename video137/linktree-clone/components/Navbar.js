@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
-  return (
-    <>
-    <nav className='bg-white flex w-[90%] mx-auto justify-between items-center px-4 py-3 rounded-full fixed top-10 right-[5%]'>
+  const pathname= usePathname()
+  const showNavbar = ["/", "/generate"].includes(pathname)
+
+  return ( <> {showNavbar && <nav className='bg-white flex w-[90%] mx-auto justify-between items-center px-4 py-3 rounded-full fixed top-10 right-[5%]'>
     <div className='flex gap-10 pl-6 items-center justify-center'>
     <div className='flex justify-center items-center'>
       <Link href={"/"}>
@@ -23,7 +26,7 @@ const Navbar = () => {
       <button className='bg-gray-800 py-3 px-5 rounded-full text-white font-bold cursor-poinLinkr'>Sign up free</button>
     </div>
     </nav>
-    </>
+}</>
   )
 }
 

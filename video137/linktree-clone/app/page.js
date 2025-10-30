@@ -7,6 +7,9 @@ export default function Home() {
   const router = useRouter()
   const [text, setText] = useState("")
 
+  const claimTree = () =>{
+    router.push(`${text}`)
+  }
   const createTree = () =>{
     router.push(`/generate?handle=${text}`)
   }
@@ -23,9 +26,15 @@ export default function Home() {
           <p className="text-amber-300 font-extrabold text-5xl mb-3">in bio.</p>
           <p className="text-white text-lg">Join 70M+ people using Linktree for their link in bio. One link to help you share everything you create, curate and sell from your Instagram, TikTok, Twitter, YouTube and other social media profiles.</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col gap-2">
+            <div className="flex justify-center items-center gap-2">
             <input onChange={(e)=>setText(e.target.value)} className="bg-white px-3 py-2 rounded-md focus:outline-lime-800" type="text" placeholder="bittr.ee/your-url" />
-            <button onClick={()=>createTree()} className="bg-pink-200 hover:bg-pink-300 font-semibold px-4 py-3 rounded-full cursor-pointer">claim your bittree</button>
+            <button onClick={()=>claimTree()} className="bg-pink-200 hover:bg-pink-300 font-semibold px-4 py-3 rounded-full cursor-pointer">Claim your bittree</button>
+            </div>
+            <span className="font-bold flex justify-center items-center">OR</span>
+            <div className="flex justify-center items-center">
+              <button onClick={()=>createTree()} className="bg-pink-500 hover:bg-pink-600 font-semibold px-4 py-3 rounded-full cursor-pointer">Create your bittree</button>
+              </div>
           </div>
         </div>
         <div className="mr-[5vw]">

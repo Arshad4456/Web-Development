@@ -75,7 +75,7 @@ const Manager = () => {
     let c = confirm("Are you want to delete?")
     if(c){
       setPasswordArray(passwordArray.filter(item=>item.id!==id))
-      let res = await fetch("http://localhost:3000/", {method: "DELETE", headers: {"Content-Type":
+      await fetch("http://localhost:3000/", {method: "DELETE", headers: {"Content-Type":
         "application/json"}, body:JSON.stringify({id}) })
       // localStorage.setItem("passwords", JSON.stringify(passwordArray.filter(item=>item.id!==id)))
     }
